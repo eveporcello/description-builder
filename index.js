@@ -73,21 +73,12 @@ function randomCategory() {
 
 function description(obj) {
   const firstSentences = [
-    `When the going gets weird, the weird ${
-      obj.type === "NATURE" || "ARTSCRAFTS" ? "go" : "play"
-    } ${obj.name}.`,
-    `By failing to prepare for ${obj.name}, you are preparing to fail at ${obj.name}.`,
-    `Ask not what ${obj.name} can do for you. Ask what you can do for ${obj.name}.`
-  ];
-  const secondSentences = [
+    `Nothing can prepare you for the thrill of ${obj.name}.`,
+    `Ascend to new heights when you join the fun at ${obj.name}.`,
     `This ${obj.day}, prepare to have the most fun of your life.`,
     `Don't get a case of the ${obj.day}s.`,
-    `Fear is a myth. FOMO is real.`
-  ];
-  const thirdSentences = [
-    `Register now. Most of the equipment is safe most of the time.`,
-    `You didn't register yet? It'd be a lot cooler if you did!`,
-    `Sign up now. Your future depends on it.`
+    `Do you like participating in activities where most of the equipment is safe most of the time? Then you'll love ${obj.name}`,
+    `You didn't register for ${obj.name} yet? It'd be a lot cooler if you did!`
   ];
   return `${faker.random.arrayElement(
     firstSentences
